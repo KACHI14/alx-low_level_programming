@@ -4,18 +4,18 @@
 /**
  * free_grid - frees 2d array
  * @grid: 2d grid
- * @height: grid of height dimension
- * Description: grid of frees memory 
- * Return: nothings
+ * @height: height dimension of grid
+ * Description: frees memory of grid
+ * Return: nothing
  *
  */
 void free_grid(int **grid, int height)
 {
-	int o;
+	int i;
 
-	for (o = 0; o < height; o++)
+	for (i = 0; i < height; i++)
 	{
-		free(grid[o]);
+		free(grid[i]);
 	}
 	free(grid);
 }
